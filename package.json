@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/allouis/model/issues"
   },
-  "homepage": "https://github.com/allouis/model"
+  "homepage": "https://github.com/allouis/model",
+  "dependencies": {
+    "minivents": "~1.2.0",
+    "obstruct": "0.0.2"
+  }
 }
