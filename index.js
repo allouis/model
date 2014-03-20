@@ -7,9 +7,9 @@ var noop = function () {};
 var Model = Obstruct.extend({
   constructor: function (data) {
     minivents(this);
-    var _attr = Object.create({}, this.defaults);
-    delete this.defaults;
-    for (var prop in data) {
+    data = data || {};
+    var _attr = {};
+    for (prop in data) {
       _attr[prop] = data[prop];
       Object.defineProperty(this, prop, {
         get: createGetter(_attr, prop),
