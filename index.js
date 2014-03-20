@@ -9,7 +9,7 @@ var Model = Obstruct.extend({
     minivents(this);
     data = data || {};
     var _attr = {};
-    for (prop in data) {
+    for (var prop in data) {
       if (data.hasOwnProperty(prop)) {
         _attr[prop] = data[prop];
         Object.defineProperty(this, prop, {
