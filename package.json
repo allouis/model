@@ -1,0 +1,24 @@
+{
+  "name": "_mvc-model",
+  "version": "0.0.0",
+  "description": "the m in _mvc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/allouis/model.git"
+  },
+  "keywords": [
+    "model",
+    "_mvc",
+    "mvc"
+  ],
+  "author": "Fabien O'Carroll",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allouis/model/issues"
+  },
+  "homepage": "https://github.com/allouis/model"
+}
