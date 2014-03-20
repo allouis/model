@@ -10,11 +10,13 @@ var Model = Obstruct.extend({
     data = data || {};
     var _attr = {};
     for (prop in data) {
-      _attr[prop] = data[prop];
-      Object.defineProperty(this, prop, {
-        get: createGetter(_attr, prop),
-        set: createSetter(_attr, prop, this)
-      });
+      if (data.hasOwnProperty(prop)) {
+        _attr[prop] = data[prop];
+        Object.defineProperty(this, prop, {
+          get: createGetter(_attr, prop),
+          set: createSetter(_attr, prop, this)
+        });
+      }
     }
     this.init(data);
   },
