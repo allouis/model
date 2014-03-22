@@ -15,7 +15,8 @@ var Model = Obstruct.extend({
         _attr[prop] = data[prop];
         Object.defineProperty(this, prop, {
           get: createGetter(_attr, prop),
-          set: createSetter(_attr, prop, this)
+          set: createSetter(_attr, prop, this),
+          enumerable: true
         });
       }
     }
