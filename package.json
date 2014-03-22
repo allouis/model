@@ -1,5 +1,5 @@
 {
-  "name": "_mvc-model",
+  "name": "mvc-model",
   "version": "0.0.1",
   "description": "the m in _mvc",
   "main": "index.js",
