@@ -21,6 +21,16 @@ var Model = Obstruct.extend({
     }
     this.init(data);
   },
+  data: function () {
+    var data = {};
+    for (var prop in this) {
+      if (this.hasOwnProperty(prop)) {
+        if (typeof this[prop] !== 'function') {
+          data[prop] = this[prop];
+        } 
+      }
+    }
+  },
   init: noop,
   defaults: {}
 });
