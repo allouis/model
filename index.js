@@ -30,6 +30,7 @@ var Model = Obstruct.extend({
         } 
       }
     }
+    return data;
   },
   init: noop,
   defaults: {}
